@@ -1,0 +1,52 @@
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\bin\Debug\loltimer.exe.config
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\App.g.cs
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer_MarkupCompile.cache
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.g.resources
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.Properties.Resources.resources
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.csproj.GenerateResource.Cache
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\bin\Debug\loltimer.exe
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\bin\Debug\loltimer.pdb
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.exe
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.pdb
+c:\users\wwen\documents\visual studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.exe.licenses
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer_MarkupCompile.lref
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\Loltimer.TimerWithSynthesizer.resources
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\Themes\Generic.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\HotKeyManager\HotKeyManagerView.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\HotKeyManager\HotKeyManagerView.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\SingleHotKey\SingleHotkeyView.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\SingleHotKey\SingleHotkeyView.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\UserControls\ProgressBarWithTextControl.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\UserControls\ProgressBarWithTextControl.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\ChampionTimer\ChampionTimerView.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\ChampionTimer\ChampionTimerView.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\EntryPoint.g.cs
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\EntryPoint.baml
+C:\Users\wwen\Documents\Visual Studio 2013\Projects\loltimer\loltimer\obj\Debug\loltimer.csprojResolveAssemblyReference.cache
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\bin\Debug\loltimer.exe.config
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.exe
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.pdb
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\bin\Debug\loltimer.exe
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\bin\Debug\loltimer.pdb
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.csprojResolveAssemblyReference.cache
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\UserControls\ProgressBarWithTextControl.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\SingleHotKey\SingleHotkeyView.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\ChampionTimer\ChampionTimerView.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\HotKeyManager\HotKeyManagerView.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\EntryPoint.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\UserControls\ProgressBarWithTextControl.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\SingleHotKey\SingleHotkeyView.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\App.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer_MarkupCompile.cache
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer_MarkupCompile.lref
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\ChampionTimer\ChampionTimerView.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\HotKeyManager\HotKeyManagerView.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\EntryPoint.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\Themes\Generic.baml
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.g.resources
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\Loltimer.Properties.Resources.resources
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\Loltimer.TimerWithSynthesizer.resources
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.csproj.GenerateResource.Cache
+C:\Users\CanonPixma\Desktop\loltimer\loltimer\obj\Debug\loltimer.exe.licenses

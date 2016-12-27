@@ -51,6 +51,19 @@ namespace Loltimer
             return this.UtilComboBox;
         }
 
+        public void SetChampionImage(string iconName)
+        {
+            try
+            {
+                this.ChampionImage.Source = new BitmapImage(new Uri("..\\..\\Icons\\"+iconName.Replace(" ", "_")+"Square.png", UriKind.Relative)); ;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Problem loading icon for " + iconName);
+            }
+        }
+
+
         public ChampionTimerView()
         {
             InitializeComponent();

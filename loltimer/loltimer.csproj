@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loltimer</RootNamespace>
     <AssemblyName>loltimer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,15 +34,43 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Loltimer.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="InfragisticsWPF4.Chart.v10.3, Version=10.3.20103.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.Controls.Menus.XamMenu.v10.3, Version=10.3.20103.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.DockManager.v10.3, Version=10.3.20103.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.Editors.v10.3, Version=10.3.20103.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.v10.3, Version=10.3.20103.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RiotSharp, Version=2.6.0.27461, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RiotSharp.2.5.1\lib\portable-net45+win+wpa81\RiotSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Speech" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -138,7 +167,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,6 +174,7 @@
     <EmbeddedResource Include="Components\TimerWithSynthesizer.resx">
       <DependentUpon>TimerWithSynthesizer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,12 +197,150 @@
     <Resource Include="Icons\Summoner%27s_Insight_mastery_s4.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RiotSharp-develop\RiotSharp\RiotSharp.csproj">
-      <Project>{3815e113-140c-4ee7-b0b9-7797c9352311}</Project>
-      <Name>RiotSharp</Name>
-    </ProjectReference>
+    <Resource Include="Icons\AatroxSquare.png" />
+    <Resource Include="Icons\AhriSquare.png" />
+    <Resource Include="Icons\Air_LuxSquare.png" />
+    <Resource Include="Icons\AkaliSquare.png" />
+    <Resource Include="Icons\AlistarSquare.png" />
+    <Resource Include="Icons\AmumuSquare.png" />
+    <Resource Include="Icons\AniviaSquare.png" />
+    <Resource Include="Icons\AnnieSquare.png" />
+    <Resource Include="Icons\AsheSquare.png" />
+    <Resource Include="Icons\Aurelion_SolSquare.png" />
+    <Resource Include="Icons\AzirSquare.png" />
+    <Resource Include="Icons\BardSquare.png" />
+    <Resource Include="Icons\BlitzcrankSquare.png" />
+    <Resource Include="Icons\BrandSquare.png" />
+    <Resource Include="Icons\BraumSquare.png" />
+    <Resource Include="Icons\BristleSquare.png" />
+    <Resource Include="Icons\CaitlynSquare.png" />
+    <Resource Include="Icons\CamilleSquare.png" />
+    <Resource Include="Icons\CassiopeiaSquare.png" />
+    <Resource Include="Icons\Cho%27GathSquare.png" />
+    <Resource Include="Icons\CorkiSquare.png" />
+    <Resource Include="Icons\DariusSquare.png" />
+    <Resource Include="Icons\Dark_LuxSquare.png" />
+    <Resource Include="Icons\DianaSquare.png" />
+    <Resource Include="Icons\Dr._MundoSquare.png" />
+    <Resource Include="Icons\DravenSquare.png" />
+    <Resource Include="Icons\EkkoSquare.png" />
+    <Resource Include="Icons\EliseSquare.png" />
+    <Resource Include="Icons\EvelynnSquare.png" />
+    <Resource Include="Icons\EzrealSquare.png" />
+    <Resource Include="Icons\FiddlesticksSquare.png" />
+    <Resource Include="Icons\FioraSquare.png" />
+    <Resource Include="Icons\FizzSquare.png" />
+    <Resource Include="Icons\GalioSquare.png" />
+    <Resource Include="Icons\GangplankSquare.png" />
+    <Resource Include="Icons\GarenSquare.png" />
+    <Resource Include="Icons\GnarSquare.png" />
+    <Resource Include="Icons\GragasSquare.png" />
+    <Resource Include="Icons\GravesSquare.png" />
+    <Resource Include="Icons\HecarimSquare.png" />
+    <Resource Include="Icons\HeimerdingerSquare.png" />
+    <Resource Include="Icons\IllaoiSquare.png" />
+    <Resource Include="Icons\IreliaSquare.png" />
+    <Resource Include="Icons\IvernSquare.png" />
+    <Resource Include="Icons\JannaSquare.png" />
+    <Resource Include="Icons\Jarvan_IVSquare.png" />
+    <Resource Include="Icons\JaxSquare.png" />
+    <Resource Include="Icons\JayceSquare.png" />
+    <Resource Include="Icons\JhinSquare.png" />
+    <Resource Include="Icons\JinxSquare.png" />
+    <Resource Include="Icons\KalistaSquare.png" />
+    <Resource Include="Icons\KarmaSquare.png" />
+    <Resource Include="Icons\KarthusSquare.png" />
+    <Resource Include="Icons\KassadinSquare.png" />
+    <Resource Include="Icons\KayleSquare.png" />
+    <Resource Include="Icons\KennenSquare.png" />
+    <Resource Include="Icons\Kha%27ZixSquare.png" />
+    <Resource Include="Icons\KindredSquare.png" />
+    <Resource Include="Icons\KledSquare.png" />
+    <Resource Include="Icons\Kog%27MawSquare.png" />
+    <Resource Include="Icons\LeBlancSquare.png" />
+    <Resource Include="Icons\LeeSinSquare.png" />
+    <Resource Include="Icons\LeonaSquare.png" />
+    <Resource Include="Icons\LissandraSquare.png" />
+    <Resource Include="Icons\LucianSquare.png" />
+    <Resource Include="Icons\LuluSquare.png" />
+    <Resource Include="Icons\LuxSquare.png" />
+    <Resource Include="Icons\MalphiteSquare.png" />
+    <Resource Include="Icons\MalzaharSquare.png" />
+    <Resource Include="Icons\MaokaiSquare.png" />
+    <Resource Include="Icons\MasterYiSquare.png" />
+    <Resource Include="Icons\MissFortuneSquare.png" />
+    <Resource Include="Icons\MordekaiserSquare.png" />
+    <Resource Include="Icons\MorganaSquare.png" />
+    <Resource Include="Icons\NamiSquare.png" />
+    <Resource Include="Icons\NasusSquare.png" />
+    <Resource Include="Icons\NautilusSquare.png" />
+    <Resource Include="Icons\NidaleeSquare.png" />
+    <Resource Include="Icons\NocturneSquare.png" />
+    <Resource Include="Icons\NunuSquare.png" />
+    <Resource Include="Icons\OlafSquare.png" />
+    <Resource Include="Icons\OriannaSquare.png" />
+    <Resource Include="Icons\PantheonSquare.png" />
+    <Resource Include="Icons\PoppySquare.png" />
+    <Resource Include="Icons\QuinnSquare.png" />
+    <Resource Include="Icons\RammusSquare.png" />
+    <Resource Include="Icons\Rek%27SaiSquare.png" />
+    <Resource Include="Icons\RenektonSquare.png" />
+    <Resource Include="Icons\RengarSquare.png" />
+    <Resource Include="Icons\RivenSquare.png" />
+    <Resource Include="Icons\RumbleSquare.png" />
+    <Resource Include="Icons\RyzeSquare.png" />
+    <Resource Include="Icons\SejuaniSquare.png" />
+    <Resource Include="Icons\ShacoSquare.png" />
+    <Resource Include="Icons\ShenSquare.png" />
+    <Resource Include="Icons\ShyvanaSquare.png" />
+    <Resource Include="Icons\SingedSquare.png" />
+    <Resource Include="Icons\SionSquare.png" />
+    <Resource Include="Icons\SivirSquare.png" />
+    <Resource Include="Icons\SkarnerSquare.png" />
+    <Resource Include="Icons\SonaSquare.png" />
+    <Resource Include="Icons\SorakaSquare.png" />
+    <Resource Include="Icons\SpiritGuardUdyrSquare.png" />
+    <Resource Include="Icons\SwainSquare.png" />
+    <Resource Include="Icons\SyndraSquare.png" />
+    <Resource Include="Icons\Tahm_KenchSquare.png" />
+    <Resource Include="Icons\TaliyahSquare.png" />
+    <Resource Include="Icons\TalonSquare.png" />
+    <Resource Include="Icons\TaricSquare.png" />
+    <Resource Include="Icons\TeemoSquare.png" />
+    <Resource Include="Icons\ThreshSquare.png" />
+    <Resource Include="Icons\TristanaSquare.png" />
+    <Resource Include="Icons\TrundleSquare.png" />
+    <Resource Include="Icons\TryndamereSquare.png" />
+    <Resource Include="Icons\Twisted_FateSquare.png" />
+    <Resource Include="Icons\TwitchSquare.png" />
+    <Resource Include="Icons\UdyrSquare.png" />
+    <Resource Include="Icons\UrgotSquare.png" />
+    <Resource Include="Icons\VarusSquare.png" />
+    <Resource Include="Icons\VayneSquare.png" />
+    <Resource Include="Icons\VeigarSquare.png" />
+    <Resource Include="Icons\Vel%27KozSquare.png" />
+    <Resource Include="Icons\ViktorSquare.png" />
+    <Resource Include="Icons\ViSquare.png" />
+    <Resource Include="Icons\VladimirSquare.png" />
+    <Resource Include="Icons\VolibearSquare.png" />
+    <Resource Include="Icons\WarwickSquare.png" />
+    <Resource Include="Icons\WukongSquare.png" />
+    <Resource Include="Icons\XerathSquare.png" />
+    <Resource Include="Icons\Xin_ZhaoSquare.png" />
+    <Resource Include="Icons\YasuoSquare.png" />
+    <Resource Include="Icons\YorickSquare.png" />
+    <Resource Include="Icons\ZacSquare.png" />
+    <Resource Include="Icons\ZedSquare.png" />
+    <Resource Include="Icons\ZiggsSquare.png" />
+    <Resource Include="Icons\ZileanSquare.png" />
+    <Resource Include="Icons\ZyraSquare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

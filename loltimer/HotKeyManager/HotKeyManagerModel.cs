@@ -20,7 +20,7 @@ namespace Loltimer
 
         public void ChangeAHotkey(int idOfChampion, Keys keyToChangeTo)
         {
-            currentHotKeys[idOfChampion] = keyToChangeTo;
+            currentHotKeys[idOfChampion-1] = keyToChangeTo;
         }
 
     }

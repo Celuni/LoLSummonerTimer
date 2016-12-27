@@ -127,9 +127,9 @@ namespace Loltimer
             {
                 summoner = api.GetSummoner(Region.na, championName);
                 var currentGame = api.GetCurrentGame(Platform.NA1, summoner.Id);
-                int friendlyID = currentGame.Participants ;
+                //int friendlyID = currentGame.Participants ;
                 foreach (var p in currentGame.Participants){
-                    if(p.TeamId)
+                    Console.WriteLine(p);
                 }
             }
             catch (RiotSharpException ex)

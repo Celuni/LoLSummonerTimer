@@ -79,9 +79,11 @@ namespace Loltimer.ChampionTimer
             this.champTimerView.GetProgBarWithText().ResetProgressBar();
         }
 
+
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.champTimerModel.GetTimer().UtilityPoints = Int32.Parse(this.champTimerView.GetUtilComboBox().SelectedItem.ToString());
+
         }
 
         /// <summary>
@@ -94,7 +96,8 @@ namespace Loltimer.ChampionTimer
             if (e.Key == System.Windows.Input.Key.Return)
             {
                 this.champTimerModel.ChampionName = this.champTimerView.GetChampionTextBox().Text;
-
+                //also change the image for the icon
+                this.champTimerView.SetChampionImage(this.champTimerView.GetChampionTextBox().Text);
             }
         }
 

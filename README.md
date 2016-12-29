@@ -1,4 +1,6 @@
 # 'LoLSummonerTimerC#'
+<img src = "screenshots/main.PNG?raw=true"></img>
+
 Features include:
 ---
 * Google Speech to tell you when you start and end a timer
@@ -6,10 +8,7 @@ Features include:
 * Icons for all champions (as of 12/27)
 * Consideration of Utility Points to change % of 5 minutes
 * Conversion from Minutes to Seconds
-
-<img src = "screenshots/main.PNG?raw=true"></img>
-
-Global and Modifiable Hotkeys
+* Global and Modifiable Hotkeys
 <img src = "screenshots/hotkey.PNG?raw=true"></img>
 
 12/27:

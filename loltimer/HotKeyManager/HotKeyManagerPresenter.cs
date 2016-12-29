@@ -58,7 +58,10 @@ namespace Loltimer.HotKeyManager
         public void RegisterDefaultHotKeys()
         {
             for (int i = 1; i <= GlobalVars.numOfPanels; i++)
+            {
                 NativeMethods.RegisterHotKey(ptr, i, 0, (int)GlobalVars.defaultKeys[i - 1]);
+                Console.WriteLine("registered hotkey " + (int)GlobalVars.defaultKeys[i - 1]);
+            }
 
         }
         /// <summary>

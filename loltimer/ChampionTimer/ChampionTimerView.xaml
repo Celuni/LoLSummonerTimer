@@ -45,14 +45,12 @@
         <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="../Icons/Flash.png" RenderTransformOrigin="5.182,2.273" Margin="200,22,0,0" Height="80" Width="80"/>
         <StackPanel VerticalAlignment="Top" Margin="285,22,0,0" HorizontalAlignment="Left" Height="94">
 
-            <Image x:Name="SummonersInsightImahe" RenderTransformOrigin="0.515,0.407" Height="43" Source="/loltimer;component/Icons/Summoner's_Insight_mastery_s4.png"/>
+            <Image x:Name="SummonersInsightImage" RenderTransformOrigin="0.515,0.407" Height="43" Source="/loltimer;component/Icons/Summoner's_Insight_mastery_s4.png"/>
 
             <TextBlock TextWrapping="Wrap" Text="Utility Points" HorizontalAlignment="Left" RenderTransformOrigin="0.687,0.6" VerticalAlignment="Top"/>
             <ComboBox x:Name="UtilComboBox" Margin="10,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="45">
                 <System:Int32>0</System:Int32>
                 <System:Int32>1</System:Int32>
-                <System:Int32>2</System:Int32>
-                <System:Int32>3</System:Int32>
             </ComboBox>
         </StackPanel>
         <StackPanel RenderTransformOrigin="0.5,0.5" Margin="370,44,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" Height="46">
@@ -70,6 +68,7 @@
         <local:ProgressBarWithTextControl x:Name="ProgBarWithText" HorizontalAlignment="Left" Margin="455,55,0,0" VerticalAlignment="Top" Height="Auto" Width="Auto"/>
 
         <Ellipse x:Name="Ellipse" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="25" Margin="755,65,0,0" Stroke="Black" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.6,1" AllowDrop="True"/>
+        <TextBlock x:Name="SummonerNameTextBox" HorizontalAlignment="Left" Margin="95,22,0,0" TextWrapping="Wrap" Text="Summoner Name" VerticalAlignment="Top" Width="99" Height="49"/>
 
     </Grid>
 </UserControl>

@@ -258,7 +258,6 @@
     <Resource Include="Icons\KledSquare.png" />
     <Resource Include="Icons\Kog%27MawSquare.png" />
     <Resource Include="Icons\LeBlancSquare.png" />
-    <Resource Include="Icons\LeeSinSquare.png" />
     <Resource Include="Icons\LeonaSquare.png" />
     <Resource Include="Icons\LissandraSquare.png" />
     <Resource Include="Icons\LucianSquare.png" />
@@ -334,6 +333,9 @@
     <Resource Include="Icons\ZiggsSquare.png" />
     <Resource Include="Icons\ZileanSquare.png" />
     <Resource Include="Icons\ZyraSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Lee_SinSquare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

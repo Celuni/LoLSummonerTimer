@@ -14,6 +14,7 @@ namespace Loltimer
         {
             InitializeComponent();
             //if you dont say what textBlock1 is , then changing the value will call progressBar_valuechagned
+            ProgBar.Maximum = 60 * 5;
             ProgBar.Value = ProgBar.Maximum;
             ProgBar.ValueChanged += ProgressBar_ValueChanged;
 

@@ -1,0 +1,10 @@
+F12 doesnt start or stop timer #5
+	https://msdn.microsoft.com/en-us/library/ms646309.aspxlol
+	The F12 key is reserved for use by the debugger at all times, so it should not be registered as a hot key. Even when you are not debugging an application, F12 is reserved in case a kernel-mode debugger or a just-in-time debugger is resident.
+
+
+after drag and drop, timer hotkey moves with them
+
+
+
+add disclaimer to program.

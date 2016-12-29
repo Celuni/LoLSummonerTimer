@@ -8,8 +8,8 @@ namespace Loltimer
     public partial class TimerWithSynthesizer : Component
     {
         private readonly int flashTime = 300;
-        private int goalTime;
-        private int utilityPoints;
+        private int goalTime = 300;
+        private int utilityPoints = 0;
         private int time;
         private SpeechSynthesizer synth;
         private DispatcherTimer stopwatch;
@@ -96,13 +96,12 @@ namespace Loltimer
         public void EvauluateTimeFromUtility()
         {
             double percentageReduced = 0;
+            //as of season 2016, only one point in utility will reduce the summoner spell cooldown by 15 %
+            //http://leagueoflegends.wikia.com/wiki/Insight
             switch (utilityPoints)
             {
                 case 0: percentageReduced = 0; break;
-                case 1: percentageReduced = .08; break;
-                case 2: percentageReduced = .14; break;
-                case 3: percentageReduced = .20; break;
-                   
+                case 1: percentageReduced = .15; break;   
 
             }
             goalTime = (int) (flashTime - (flashTime * percentageReduced));

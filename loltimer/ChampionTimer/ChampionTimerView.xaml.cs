@@ -63,6 +63,15 @@ namespace Loltimer
             }
         }
 
+        public void SetSummonerName(string summonerName)
+        {
+            this.SummonerNameTextBox.Text = summonerName;
+            
+        }
+        public void SetChampionTextBoxName(string championName)
+        {
+            this.ChampionTextBox.Text = championName;
+        }
 
         public ChampionTimerView()
         {

@@ -115,8 +115,28 @@ namespace Loltimer.ChampionTimer
         public void SetDefaultChampionTextBoxField()
         {
             this.champTimerModel.ChampionName = "Champion" + this.champTimerModel.Id.ToString();
-            this.champTimerView.ChampionTextBox.Text = "Champion" + this.champTimerModel.Id.ToString();
-            
+            this.champTimerView.SetChampionTextBoxName("Champion" + this.champTimerModel.Id.ToString());
+
+        }
+
+        public void LoadFromRiotAPI(string summonerName, string championName, bool hasInsight)
+        {
+            this.champTimerModel.ChampionName = championName;
+            this.champTimerView.SetChampionImage(championName);
+            this.champTimerView.SetSummonerName(summonerName);
+            this.champTimerView.SetChampionTextBoxName(championName);
+            SetUtilInViewAndModel(hasInsight);
+
+
+        }
+
+        public void SetUtilInViewAndModel(bool hasInsight)
+        {
+            this.champTimerModel.SetUtilPoints(hasInsight);
+            if (hasInsight)
+                this.champTimerView.UtilComboBox.SelectedIndex = 1;
+            else
+                this.champTimerView.UtilComboBox.SelectedIndex = 0;
         }
 
 

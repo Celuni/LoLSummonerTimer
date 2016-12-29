@@ -178,10 +178,11 @@ namespace Loltimer
                 else
                     enemyTeam = team1;
 
+                int i = 0;
                 foreach (var p in enemyTeam)
                 {
-                    Console.WriteLine("Player " + p.SummonerName + " is playing " + staticApi.GetChampion(Region.na, (int)p.ChampionId).Name);
-
+                    string championName = staticApi.GetChampion(Region.na, (int)p.ChampionId).Name;
+                    Console.WriteLine("Player " + p.SummonerName + " is playing " + championName);
 
                     if (staticApi.GetSummonerSpell(Region.na,
                         (RiotSharp.StaticDataEndpoint.SummonerSpell)p.SummonuerSpell1).Name.Equals("Flash") ||
@@ -196,6 +197,7 @@ namespace Loltimer
                      * rank	        int	    The number of points put into this mastery by the user
                      */
                     var m = p.Masteries;
+                    bool hasInsight = false;
                     foreach (var mastery in m)
                     {
                         var masteryDetail = staticApi.GetMastery(Region.na, (int) mastery.MasteryId);
@@ -204,10 +206,14 @@ namespace Loltimer
 
                             int id = masteryDetail.Id;
                             Console.WriteLine("And they have the insight mastery.");
+                            hasInsight = true;
+
                         }
 
                         
                     }
+                    championPanelPresenters[i].LoadFromRiotAPI(p.SummonerName, championName, hasInsight);
+                    i++;
 
                 }
 

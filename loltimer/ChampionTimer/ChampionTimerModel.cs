@@ -33,5 +33,13 @@ namespace Loltimer.ChampionTimer
         {
             return this.timer;
         }
+        public void SetUtilPoints(bool hasInsight)
+        {
+            if (hasInsight)
+                this.timer.UtilityPoints = 1;
+            else
+                this.timer.UtilityPoints = 0;
+
+        }
     }
 }

@@ -17,7 +17,7 @@ currently working on using Riot API to pull summoner data.
 
 12/29:
 ---
-complete!
+complete! all you do is enter in the summoner name!
 <img src = "screenshots/riotapi.PNG?raw=true"></img>
 
 

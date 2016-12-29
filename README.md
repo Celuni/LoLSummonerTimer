@@ -14,6 +14,9 @@ Features include:
 12/27:
 ---
 currently working on using Riot API to pull summoner data.
+12/29: complete!
+<img src = "screenshots/riotapi.PNG?raw=true"></img>
+
 
 
 Dependencies: 
